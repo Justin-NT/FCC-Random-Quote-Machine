@@ -60,8 +60,9 @@ body {
   border-radius: 4;
 }
 
-#quote-button:hover {
+#new-quote:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 #twitter-icon {
@@ -77,4 +78,8 @@ a {
   padding: 0%;
   height: 3rem;
   width: 3rem;
+}
+
+a:hover {
+  opacity: 0.8;
 }
