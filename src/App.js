@@ -37,9 +37,9 @@ const App = () => {
   return (
     <div>
       {quote.quoteText ? console.log(quote.quoteText.length) : null}
-      <div id="quote-container">
+      <div id="quote-box">
         <div id="text-container">
-          <div id="quote">
+          <div id="text">
             <span>{quote.quoteText}</span>
           </div>
           <div id="author">
@@ -48,12 +48,12 @@ const App = () => {
         </div>
         <div id="call-to-action">
           <div>
-            <a href={twitterUrl} target="#" alt="tweet quote">
+            <a href={twitterUrl} target="#" alt="tweet quote" id="tweet-quote">
               <FaTwitterSquare id="twitter-icon" />
             </a>
           </div>
           <div id="button-container">
-            <button id="quote-button" onClick={() => quoteFetcher()}>
+            <button id="new-quote" onClick={() => quoteFetcher()}>
               New Quote
             </button>
           </div>
